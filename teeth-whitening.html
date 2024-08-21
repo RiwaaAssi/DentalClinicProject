@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teeth Whitening</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <nav  id="scrollNavbar" class="navbar navbar-expand-lg bg-body-tertiary d-none  " >
+        <div class="container">
+          <a class="navbar-brand" href="#">  <img src="./Images/teeth.jpg" alt="Teeth Logo"/> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  active" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#treatment-steps">Treatment steps</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#prices">Prices</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link " href="#appointments">Appointments</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="checkLogin(event)">User-Page</a>
+            </li> 
+            </ul>
+            <div class="d-flex gap-3">
+              <button class="btn btn-outline-primary " onclick="goToLogin()">Login</button>
+              <button class="btn btn-outline-primary " onclick="goToRegister()">Register</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    
+
+    <header>
+      <div id="carouselExampleCaptions" class="carousel slide vh-100">
+       
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100 text-white" 
+          style="background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('./Images/image2.jpg'); background-size: cover; background-position: center;">
+          <div class="d-flex flex-column min-vh-100">
+            <div class="d-flex flex-column min-vh-100">
+
+               
+                
+                <div class="information-clock">
+                    <img src="./Images/clock.png"/>
+                    <p>Monday to Friday 9AM-19PM</p>
+
+                     <img src="./Images/telephone.png"/>
+                     <p>Call us +22489766</p>
+            
+                </div>
+                
+                <div class="white-line"></div> 
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="./Images/teeth.jpg" alt="Teeth Logo"/>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="./index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-light " href="#treatment-steps">Treatment steps</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-light " aria-current="page" href="#prices">Prices</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-light " href="#appointments">Appointments</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link text-light" href="#" onclick="checkLogin(event)">User-Page</a>
+                        </li>
+                         
+                        </ul>
+                        <div class="register-login">
+                          <button class="btn btn-outline-primary text-light " onclick="goToLogin()">Login</button>
+                          <button class="btn btn-outline-primary text-light" onclick="goToRegister()">Register</button>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                <div class="text-center "><h1>Whitening Solutions Designed for a Brighter Smile</h1></div>
+                <div class="card mt-auto mx-5 mb-2" style="width: 500px;">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Images/image6.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/image5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/image3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  <div class="card-body">
+                    <h4 class="card-text text-center text-primary">"Your smile is our responsibility"</h4>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      </div>
+      </div>
+     
+    </header>
+
+    <main>
+        <section id="treatment-steps">
+            <div class="treatment container">
+                <h1 class="text-center text-primary mb-3">Treatment Steps</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>Initial Consultation</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> Evaluate the patient’s dental health and determine if they are a good candidate for teeth whitening.
+                          Discuss the patient’s desired outcome and explain the different whitening options available (in-office vs. at-home treatments).
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Pre-Treatment Preparation</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong>Clean the teeth thoroughly to remove any plaque, tartar, and surface stains.
+                          Document the current shade of the teeth to compare the results after treatment.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>Protection</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>Place protective barriers on the gums and soft tissues to prevent irritation from the whitening agent.
+                          Provide the patient with protective eyewear if using a laser or light-activated whitening system.
+                          
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <strong>Application of Whitening Agent</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the forth item's accordion body.</strong>Apply the whitening gel (usually containing hydrogen peroxide or carbamide peroxide) to the teeth.
+                        For in-office treatments, a special light or laser may be used to enhance the effectiveness of the whitening agent.
+                        
+                        
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <strong>Activation and Monitoring</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the fifth item's accordion body.</strong>Activate the whitening agent (if required) and monitor the teeth during the treatment.
+                        The whitening process may take 15-30 minutes, depending on the method used.
+                        
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <strong>Post-Treatment Care</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body ">
+                        <strong>This is the sixth item's accordion body.</strong>Rinse the teeth and remove the protective barriers.
+                        Compare the final shade of the teeth with the initial shade to assess the results.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          <strong>Aftercare Instructions</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the seven item's accordion body.</strong>PAdvise the patient to avoid foods and drinks that can stain the teeth (such as coffee, tea, and red wine) for at least 24-48 hours.
+                        Recommend using a whitening toothpaste to help maintain the results.
+                        Schedule follow-up visits or provide take-home whitening kits if needed.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          <strong>Follow-Up</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the eight item's accordion body.</strong>Schedule a follow-up appointment to check the results and ensure there are no issues such as sensitivity or irritation.
+                        Discuss the maintenance of whitening results and when to consider a touch-up treatment.
+                        
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices">
+            <div class="treatment container">
+                <h1 class="text-center text-primary mb-3">Prices</h1>
+                <p class="text-primary text-center">The treatments and materials used in treating adults and minors differ; therefore, you will find different prices.</p>
+                <div class="age d-flex gap-5 justify-content-center mb-5 ">
+                    <div class="adults">
+                        
+                    <img src="./Images/image6.jpg"/>
+                    <h3 class="text-primary text-center">Adults</h3>
+                    <h4 class="text-primary text-center">Total Cost <span style="color: green;"> 230$ </span> <span  style="color: red; font-size:16px; text-decoration: line-through; text-decoration-color: black;">250$</span></h4>
+                   </div>
+
+                   <div class="minors ">     
+                    <img src="./Images/image33.jpg"/>
+                    <h3 class="text-primary text-center">Children -17 years</h3>
+                    
+                    <h4 class="text-primary text-center">Total Cost <span style="color: green;"> 100$ </span> <span  style="color: red; font-size:16px; text-decoration: line-through; text-decoration-color: black;">135$</span></h4>
+                   </div>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-reg" onclick="goToRegister()" > "Offer valid for 15 days , Register now and catch the offer."</button>
+                </div>
+            
+               
+            </div>
+
+        </section>
+
+        <section id="appointments">
+            <div class="treatment container">
+                <h1 class="text-center text-primary mb-3">Appointments</h1>
+                
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                        <tr class="head">
+                            <th>Doctor Name</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Register</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="d-flex gap-3 center-content">
+                                <img src="./Images/doctor3.jpg" alt="Doctor 1" class="doctor-img">
+                                <p>Dr. John Doe</p>
+                            </td>
+                            <td>Monday</td>
+                            <td>10:00 AM - 02:30 PM</td>
+                            <td><button class="btn-register" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</button></td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex gap-3 center-content">
+                                <img src="./Images/doctor2.jpg" alt="Doctor 2" class="doctor-img">
+                                <p>Nr. Jane Smith</p>
+                            </td>
+                            <td>Tuesday </td>
+                            <td>08:00 AM - 07:30 PM</td>
+                            <td><button class="btn-register" data-bs-toggle="modal" data-bs-target="#exampleModal1">Register</button></td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex gap-3 center-content">
+                                <img src="./Images/doctor1.jpg" alt="Doctor 3" class="doctor-img">
+                                <p> Dr. Michael Johnson</p>
+                            </td>
+                            <td>Wednesday</td>
+                            <td>02:00 PM - 06:00 PM </td>
+                            <td><button class="btn-register" data-bs-toggle="modal" data-bs-target="#exampleModal2">Register</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-primary">Click register if you would like an appointment.  </p>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Monday with Dr. John Doe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Select Available Hours</h6>
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Time Slot</th>
+                                <th>Select</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10:00 AM - 11:00 AM</td>
+                                <td><input type="radio" name="timeSlot" value="Monday-10-11"></td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM - 12:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Monday-11-12"></td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM - 01:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Monday-12-1"></td>
+                            </tr>
+                            <tr>
+                                <td>01:00 PM - 02:30 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Monday-1-2:30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Tuesday with Nr. Jane Smith</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Select Available Hours</h6>
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Time Slot</th>
+                                <th>Select</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:00 AM - 10:00 AM</td>
+                                <td><input type="radio" name="timeSlot" value="Tuesday-8-10"></td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM - 12:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Tuesday-11-12"></td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM - 02:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Tuesday-12-2"></td>
+                            </tr>
+                            <tr>
+                                <td>03:00 PM - 05:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Tuesday-3-5"></td>
+                            </tr>
+                            <tr>
+                                <td>05:00 PM - 07:30 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Tuesday-5-7:30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Wednesday with Dr. Michael Johnson</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Select Available Hours</h6>
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Time Slot</th>
+                                <th>Select</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>02:00 PM - 03:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Wednesday-2-3"></td>
+                            </tr>
+                            <tr>
+                                <td>03:00 PM - 04:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Wednesday-3-4"></td>
+                            </tr>
+                            <tr>
+                                <td>04:00 PM - 06:00 PM</td>
+                                <td><input type="radio" name="timeSlot" value="Wednesday-4-6"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkLogin(event)">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+   
+   <footer>
+    <div class="footer">
+        <div class=" footer1 container">
+            <h5>Ready to get the smile you always deserved?</h5>
+        </div>
+    </div>
+    
+    <div class="main-footer">
+        <div class="container">
+            <div class="main-footer1  d-flex gap-3 ">
+                <div class="img-clinic  d-flex gap-3 ">
+                     <img width="60px" height="60px"  src="./Images/teeth.jpg" alt="teeth"/>
+                     <h4 class="mt-3">Dental Clinic</h4>
+
+                </div>
+                <div class="working-time">
+                    <h4>Working Time</h4>
+                    <h6>Monday-Friday: 8AM-8PM</h6>
+                    <h6>Saturday: 6AM-12PM</h6>
+                    <h6>Sunday: 9AM-11PM</h6>
+                    
+
+                </div>
+                <div class="our-services">
+                    <h4>Our Services</h4>
+                    <h6>Teeth Whitening</h6>
+                    <h6>Cavity Treatment and Fillings</h6>
+                    <h6>orthodontics</h6>
+                    <h6>Routine Check-ups and Preventive Cleaning</h6>
+                    
+
+
+                </div>
+                <div class="our-clinics">
+                    <h4>Our Clinics</h4>
+                    <a href="https://www.google.com/maps/place/22-8+Fairview+Ave,+Lebanon,+NH+03766,+%D0%A1%D1%98%D0%B5%D0%B4%D0%B8%D1%9A%D0%B5%D0%BD%D0%B5+%D0%94%D1%80%D0%B6%D0%B0%D0%B2%D0%B5/@43.6440673,-72.2615196,17z/data=!3m1!4b1!4m9!1m2!2m1!1s8448+Creekside+Ave.+Wilmington,+MA+01887!3m5!1s0x4cb4b4544c8436d1:0x65a9f27fd9eac191!8m2!3d43.6440635!4d-72.2566487!16s%2Fg%2F11g63twlhm?entry=ttu"><h6>
+                        22-8 Fairview Ave, Lebanon, NH 03766, USA
+                    </6></a>
+
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+   </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./java.js"></script>
+
+  </body>
+</html>
+

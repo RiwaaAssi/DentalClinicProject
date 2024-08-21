@@ -1,0 +1,280 @@
+header{
+    padding-bottom: 100px;
+}
+main section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#scrollNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+   
+}
+section {
+    padding-top: 80px; /* Adjust based on your navbar's height */
+    margin-top: -80px; /* Negative margin to offset the padding */
+}
+
+
+
+
+.card-fixed {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+}
+
+.information-clock{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: flex-end; 
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.information-clock img{
+    width: 27px;          
+    height: 27px;      
+    border-radius: 50%;  
+}
+.information-clock p{
+    font-style: italic;
+}
+.white-line {
+    border-top: 1px solid white; 
+    margin:  0; 
+  }
+  .card:hover{
+    transform: scale(1.1);
+  }
+
+  .navbar {
+    background-color: transparent; /* Remove background color */
+   /* background-color: #093c61;*/
+  }
+  .navbar-brand img {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+  }
+  .register-login{
+    display: flex;
+    gap:15px;
+  }
+  .nav-link:hover {
+    border-bottom: 2px solid #fff;
+}
+.nav-link.active {
+    border-bottom: 2px solid #fff;
+}
+.link-services img{
+    width:250px;
+    height:250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.link-services{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: center;
+}
+.service-one ,.service-two,.service-three,.service-four{
+    width:300px;
+
+}
+.link-services p{
+  font-size: 18px;
+}
+.zoom-image {
+    transition: transform 0.3s ease;
+}
+
+.zoom-image:hover {
+    transform: scale(1.1);
+}
+.ourTeam{
+    width:auto;
+    background-color: rgb(219, 219, 247);
+   
+
+}
+.ourTeam{
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+}
+.doctors{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.contact a svg {
+    fill: #176aa5; 
+    
+  }
+ 
+  .contact-left {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-map {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    animation: moveBackAndForth 2s infinite ease-in-out;
+}
+
+@keyframes moveBackAndForth {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateX(-10px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(10px);
+    }
+}
+.map-image {
+    width: 100%;
+    height: 100%;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.contact-right svg{
+    fill: #093c61; 
+}
+.contact-right p{
+    color:#31556e; 
+   
+    
+}
+.number,.email,.address p{
+    font-size: 18px;
+}
+.footer{
+    background-color: #193d58;
+}
+.footer h5{
+   color:#ffffff;
+   padding-top: 35px;
+}
+.footer1{
+    height:100px;
+}
+.main-footer{
+    background-color: #15486d;
+    height: 400px;
+}
+.img-clinic img{
+    border-radius: 50%;
+}
+.img-clinic h4{
+    color:#ffffff;
+}
+.working-time, .our-services, .our-clinics h4{
+    color: #ffffff;
+   
+}
+.our-clinics a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.main-footer1 {
+    padding-top: 55px;
+}
+
+.working-time,.our-,.our-clinics,.img-clinic{
+    width: 400px;
+}
+
+.email a{
+    text-decoration: none;
+}
+.address a{
+    text-decoration: none;
+
+}
+
+
+.minors img ,.adults img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.btn-reg {
+    background-color: #4b81a8;
+    padding: 10px;
+    color: #ffff;
+    border-radius: 6px;
+}
+.doctor-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btn-register:hover {
+    background-color: #3a6a8d;
+}
+.btn-register {
+    background-color: #4b81a8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.table th {
+    background-color: #4b81a8;
+    color: white;
+}
+
+.img-reg img{
+   height:50px;
+   width:50px;
+   border-radius: 50%;
+}
+.reg{
+    justify-content: center;
+}
+.custom-mb-6 {
+    margin-bottom: 7rem; /* Adjust this value as needed */
+}
+.home{
+    text-decoration: none;
+    color: #ffffff;
+   
+}
+
